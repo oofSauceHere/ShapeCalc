@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:id="@+id/layout">
+
+    <EditText
+        android:id="@+id/length"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="Length"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/width"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:ems="10"
+        android:hint="Width"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="calculate"
+        android:text="Calculate!"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="65dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/calculation1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Area:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="118dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/calculation2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Perimeter:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/calculation1"
+        android:layout_width="336dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/calculation2"
+        android:layout_width="334dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/note"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Rectangle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/calculation1"
+        android:layout_alignRight="@+id/calculation1"
+        android:layout_alignTop="@+id/calculate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="clear"
+        android:text="CLEAR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/copyright"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:text="Note: all values are rounded to two decimal places" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="© DeccanRocks 2018" />
+
+</RelativeLayout>
